@@ -1,0 +1,141 @@
+nav {
+    height: 5rem;
+    width: 100vw;
+    background: var(--color-accent4);
+    display: grid;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/*on media and small screens*/
+.nav__toggle-btn {
+    display: none;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.logo {
+    width: 5rem;
+    margin-right: auto;
+    align-self: center;
+}
+
+.nav__links {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 6rem;
+    text-shadow: 1px 2px 6px rgba(8, 0, 79, 0.5);
+
+}
+.nav__links a {
+    font-weight: 400;
+}
+
+.nav__links a:hover {
+    text-decoration: underline;
+}
+
+.active-nav {
+    position: relative;
+
+}
+
+.active-nav::after {
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--color-accent4);
+    position: absolute;
+    left: calc(50% - 0.6rem);
+    transform: rotate(45deg);
+    margin-top: 0.9rem;
+}
+
+/* media queries (medium and small screens*/
+
+@media screen and (max-width: 1024px) {
+    .nav__toggle-btn {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+
+    .nav__toggle-btn svg {
+        color: var(--color-accent5);
+    }
+
+    .nav__links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding-right: 1.5rem;
+    }
+    
+    .active-nav, .active-nav::after {
+        display: none;
+    }
+
+    .nav__links.active-nav li {
+        visibility: visible; 
+        animation: slideInFromRight 0.5s ease-out forwards;
+    }
+    
+    .nav__links li {
+        height: 4rem;
+        width: 100%;
+        box-shadow: -2rem 2rem 5rem rgba(3, 1, 7, 0.2);
+        border-bottom: 1px solid var(--color-accent3);  
+        animation: slideInFromRight 0.5s ease-out forwards;
+    }      
+    
+    .nav__links.active-nav li:nth-child(1) { animation-delay: 0.1s; }
+    .nav__links.active-nav li:nth-child(2) { animation-delay: 0.2s; }
+    .nav__links.active-nav li:nth-child(3) { animation-delay: 0.3s; }
+    .nav__links.active-nav li:nth-child(4) { animation-delay: 0.4s; }
+
+    .nav__links li a {
+        background-color: var(--color-accent4);
+        height: 100%;
+        width: 100%;
+        display: block;
+        align-items: center;
+        padding: 1.2rem 3.8rem 1rem 3rem;
+    }
+
+    .show__nav {
+        display: flex;
+    }
+
+    .hide__nav {
+        display: none;
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}

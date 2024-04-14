@@ -1,0 +1,436 @@
+.about-section {
+    padding: 3rem 7rem 7rem 7rem; 
+}
+
+.intro-dessss p {
+    font-style: italic;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center; 
+    margin: 2rem 0;
+}
+
+/* Mission Section */
+.section-mission .section-mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.section-mission h2 {
+    text-align: center;
+}
+
+.mission-image img {
+    width: 100%;
+    transform: skew(15deg);
+    transition: transform 0.3s ease;
+    border-radius: 40%;
+}
+
+.mission-image img:hover {
+    transform: skew(0);
+}
+
+
+.mission-image {
+    flex-basis: 40%; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+}
+
+.mission-content {
+    width: 50%;
+    flex-basis: 60%; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+}
+
+.mission-content p {
+    padding-top: 5px;
+    margin-bottom: 1rem;
+}
+
+/* History Section */
+.section-history .section-history-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.section-history h2 {
+    text-align: center;
+}
+
+.history-content {
+    width: 50%;
+    flex-basis: 60%; 
+    max-width: 58%; 
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.history-content p {
+    padding-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.history-image {
+    flex-basis: 40%;
+    max-width: 50%; 
+    box-sizing: border-box;
+}
+
+.history-image img {
+    width: 100%;
+    transform: skew(-15deg);
+    transition: transform 0.3s ease;
+    border-radius: 40%;
+}
+
+.history-image img:hover {
+    transform: skew(0);
+
+}
+
+
+/* Leadership Section */
+.section-leader-container {
+    margin: 2rem 0;
+}
+
+.leader-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap;  
+}
+
+.leader-item {
+    flex: 1; 
+    max-width: calc(33.333% - 1rem);
+    margin-bottom: 2rem; 
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+.leader-img {
+    padding-left: 1.5rem;
+}
+
+.leader-img img {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-left: 2.7rem;
+}
+
+.job {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.JD {
+    font-size: 12px;
+    text-align: center;
+}
+
+.leader-des {
+    text-align: center;
+    margin-left: 1rem; 
+}
+
+.leader-diagram img {
+    padding-top: 2.5rem;
+    width: 100%; 
+}
+
+/* professional activities */
+/* research-and-collect, education */
+.proacti-res-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.proacti-res-col-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.res-col-img {
+    flex-basis: 40%; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+}
+
+.res-col-des {
+    width: 50%;
+    flex-basis: 60%; 
+    max-width: 50%; 
+    box-sizing: border-box;
+}
+
+.res-col-des p {
+    padding-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.res-col-des h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.proacti-res-col-content img {
+    flex-basis: 40%;
+    width: 100%;
+    transform: skew(15deg);
+    border-radius: 40%;
+    transition: transform 0.3s ease;
+}
+
+.proacti-res-col-content img:hover {
+    transform: skew(0);
+}
+
+/* exhibition, repair and restoration  */
+.proacti-ex-collect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proacti-ex-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ex-des {
+    flex-basis: 60%;
+    max-width: 60%;
+    padding: 0 2rem 0 0;
+    margin-right: 2rem;
+}
+
+.ex-des p {
+    padding-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.ex-des h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.ex-img {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+.ex-img img {
+    width: 100%;
+    transform: skew(-15deg); 
+    border-radius: 40%;
+    transition: transform 0.3s ease;
+}
+
+.ex-img img:hover {
+    transform: skew(0); 
+}
+
+.mission-content h2, .history-content h2, 
+.section-leader-container h2, .section-proacti h2, 
+.ex-des h4, .res-col-des h4 {
+    color: var(--color-accent6);
+}
+
+
+
+/* ----------------media--------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .leader-img img{
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+    .job {
+        padding-left: 1;
+    }
+    
+    .JD {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .leader-des {
+        text-align: center;
+        margin-left: 1rem; 
+    }
+
+    .mission-image img, .history-image img, .proacti-res-col-content img, .ex-img img {
+        transform: none;
+        transition: transform 0.3s ease;
+        border-radius: 0;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 4rem;
+    }
+
+    .mission-image img, .history-image img, .mission-content, .history-content,
+    .res-col-img, .ex-img, .proacti-res-col-content img, .ex-img img {
+        transform: none;
+        transition: none;
+        border-radius: 0;
+    }
+
+    .section-ex-container,
+    .proacti-res-col,
+    .proacti-ex-collect {
+        flex-direction: column;
+    }
+
+    .mission-content, .history-content,
+    .res-col-des, .ex-des {
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .leader-info {
+        justify-content: space-around;
+    }
+
+    .leader-item {
+        max-width: calc(33.333% - 1rem); 
+        margin-bottom: 2rem;
+    }
+
+    .leader-diagram img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .about-section {
+        padding: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-section p{
+        font-size: 14px;
+    }
+
+    .section-proacti {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proacti-res-col-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-image img, .history-image img, .proacti-res-col-content img, .ex-img img {
+        transform: none;
+        transition: none;
+        border-radius: 0;
+        width: 100%; 
+    }
+
+    .section-mission .section-mission-container {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .section-history .section-history-container{
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+    }
+    
+    
+    .leader-info {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+    }
+
+    .proacti-res-col, .proacti-ex-collect {
+        flex-direction: column; /* Stack the children vertically */
+        align-items: center; /* Center the items since it's now a single column */
+        margin-bottom: 2rem; 
+    }
+
+    .mission-image, .history-image .res-col-img, .ex-img{
+        order: -1; 
+        margin-bottom: 1rem;
+        flex: 1; 
+        max-width: 100%;
+    }
+
+    .res-col-img, .ex-img {
+        max-width: none;
+        margin-bottom: 1rem; 
+        flex-basis: auto;
+    }
+
+    .mission-content, .history-content, .res-col-des, .ex-des {
+        width: 100%; 
+        padding: 0; 
+        text-align: left; 
+        flex-basis: auto; 
+        max-width: none;
+    }
+
+    .proacti-res-col-content, .proacti-ex-content {
+        display: block; 
+    }
+
+    .proacti-res-col img, .proacti-ex-collect img {
+        order: -1;
+    }
+
+    .leader-item {
+        max-width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .leader-diagram img {
+        width: 100%; 
+    }
+
+    .leader-img img{
+       margin-left: 3rem;
+    }
+
+    .about-section .job {
+        font-size: 12px;
+    }
+    
+    .about-section .JD {
+        font-size: 11px;
+        text-align: center;
+    }
+}

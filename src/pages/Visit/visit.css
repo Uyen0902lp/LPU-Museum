@@ -1,0 +1,376 @@
+/* ---------video and plan button-------- */
+
+.video__ctn {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    object-fit: cover;
+    object-position: right center;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.video {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.visit-btn {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    /* padding: 10px 25px; */
+    background-color: transparent;  
+    color: var(--color-accent5);  
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s, font-weight 0.3s; /* Add font-size and font-weight transitions */
+    outline: 2.5px solid var(--color-accent5);
+    border-radius: 30px;
+    font-size: clamp(0.6rem, 4vw, 1rem);
+    padding: clamp(5px, 2vw, 10px);
+    padding: 0.8rem 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);;
+}
+  
+.visit-btn:hover {
+    background-color: var(--color-accent3);  
+    color: var(--color-accent5); 
+    outline: none; 
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: var(--color-accent6);
+}
+  
+.visit-btn {
+    top: 60%;  
+}
+
+.welcome-text {
+    position: absolute;
+    top: 45%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-accent5); 
+    /* font-size: 3rem;  */
+    font-weight: 600;
+    z-index: 2; 
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.2rem;
+    text-shadow: 3px 3px 4px rgba(2, 1, 11, 0.5);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%; 
+    border-radius: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(232, 230, 255, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* ---header like Collection, Location and Hour,... ------*/
+.section__head {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    padding-top: 0;
+    margin-top: 4rem;
+}
+/* -----------------collection------------------ */
+
+.col__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; 
+    padding: 0 10rem; 
+}
+
+.collection {
+    margin-top: 75vh; 
+    margin-bottom: 6rem;
+}
+
+
+.col__collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px; 
+}
+
+.col__title {
+    text-decoration: none;
+    padding: 20px 0 20px 0;
+}
+
+.col__title:hover{
+    text-decoration: underline;
+}
+
+.col__info {
+    font-weight: 300;
+    padding: 0 2px 20px 2px;
+}
+
+
+.col__img-ctn img {
+    max-width: 100%;  
+    height: 350px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 30px 30px 0 0;
+}
+
+/* --------------location and Hour-------------------- */
+
+.placeNhour__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0 10rem 0 10rem;
+}
+
+.placeNhour__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(232, 230, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.placeNhour__in:hover {
+    transform: scale(1.05);
+}
+
+.placeNhour__in img{
+    flex-shrink: 0;
+    width: 50%; 
+    object-fit: cover; 
+    height: auto;
+}
+
+.placeNhour__content {
+    padding: 20px; 
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.placeNhour__in h2, .placeNhour__in h4, .placeNhour__in p {
+    margin: 0; 
+    padding: 5px 0; 
+    text-align: left;
+}
+
+.placeNhour__in h2 {
+    font-weight: 600;
+}
+
+.placeNhour__in h4 {
+    font-weight: 500;
+}
+
+.placeNhour__in p {
+    font-weight: 250;
+    font-size: 12px;
+}
+
+.placeNhour__in strong {
+    font-weight: 550;
+}
+
+/* --------------media screen---------------------- */
+
+@media screen and (max-width: 1024px) {
+    .section__head {
+        padding-top: 2rem;
+    }
+
+    .welcome-text {
+        top: 35%;  
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+
+    .visit-btn {
+        top: 45%;  
+    }
+       
+    .col__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px; 
+        padding: 0 5rem; 
+    }
+
+    .col__img-ctn img {
+        width: 100%;  
+        height: 210px; 
+        object-fit: cover; 
+        object-position: center; 
+        border-radius: 30px 30px 0 0;
+    }
+    
+    .col__title {
+        padding: 12px 0 12px 0;
+        font-weight: 600;
+    }
+
+    .placeNhour__inner {
+        padding: 0 5rem;
+    }
+
+    .placeNhour__in img{
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-text {
+        top: 45%;  
+        font-weight: 450;
+    }
+
+    .visit-btn {
+        top: 55%;  
+    }
+
+    .col__info {
+        font-weight: 250;
+    }
+
+    .placeNhour__in img{
+        flex-shrink: 0;
+        width: 50%; 
+        object-fit: cover; 
+        height: 265px;
+    }
+    
+    .placeNhour__in h2 {
+        font-size: 16px; 
+    }
+    
+    .placeNhour__in h4 {
+        font-size: 11px; 
+    }
+    
+    .placeNhour__in p {
+        font-size: 9px; 
+    }
+    
+    .placeNhour__in strong {
+        font-weight: 450;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-text {
+        top: 42%;  
+        font-weight: 450;
+        font-size: 1.3rem;
+    }
+
+    .visit-btn {
+        top: 50%;  
+    }
+
+    .collection {
+        margin-top: 65vh; 
+    }
+
+    .col__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px; 
+        padding: 0 3rem; 
+    }
+    
+    .col__img-ctn img {
+        max-width: 100%;  
+        height: 200px; 
+        object-fit: cover; 
+        object-position: center; 
+        border-radius: 30px 30px 0 0;
+    }
+
+    .col__title {
+        font-size: 25px;
+        padding: 5px 0 5px 0;
+    }
+    
+    .col__info {
+        font-weight: 200;
+    }
+
+    .section__head {
+        padding-left: 2rem;
+    }
+
+    .placeNhour__in {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .placeNhour__inner {
+        padding: 0 3rem;
+    }
+
+    .placeNhour__in img {
+        width: 100%;  
+        height: 200px; 
+        object-fit: cover; 
+        object-position: center; 
+        border-radius: 30px 30px 0 0;
+        grid-row: 1;
+    }
+
+    .placeNhour__in h2, .placeNhour__in h4, .placeNhour__in p {
+        text-align: left;
+        margin: 0; 
+    }
+
+    .placeNhour__content {
+        padding: 15px; 
+        width: 100%; 
+        height: 200px;
+        grid-row: 2;
+    }
+    
+    .placeNhour__in h2 {
+        padding-bottom: 1px;
+    }
+    
+    .placeNhour__in h4 {
+        padding-bottom: 1px;
+    }
+    
+    .placeNhour__in p {
+        padding-bottom: 1px;
+    }
+    
+
+}
+

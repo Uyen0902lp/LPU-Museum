@@ -1,0 +1,63 @@
+.ticker-intro-img {
+    margin-bottom: 4rem;
+}
+
+.ticket-entry-container {
+    margin: 0.5rem 4rem;
+    
+}
+
+.ticket-entry-content {
+    padding: 2rem 6rem;
+    border-radius: 5px;
+}
+
+.prices {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.prices li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-accent4);
+}
+
+.btn-book {
+    background-color: var(--color-accent4);
+    color: var(--color-accent5);
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    transform: none;
+    transition: none;
+    display: block; 
+    margin: 0 auto 0;     
+}
+
+.btn-book:hover {
+    background-color: transparent;
+    color: var(--color-accent5);
+    border: 1px solid var(--color-accent4);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .ticket-entry-content {
+        padding: 2rem 1rem;
+        border-radius: 5px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .ticket-entry-content {
+        padding: 1rem 0;
+        border-radius: 5px;
+    }
+
+    .prices li {
+        font-size: 12px;
+    }
+}
