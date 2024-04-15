@@ -14,7 +14,7 @@ const NotFound = () => {
         <h1 className='h1__nf'>Page Not Found</h1>
       </div>
       <div className='container__nf-right'>
-        <img src={image} alt="Page Not Found image" />
+        <img src={image} alt="Page Not Found" />
       </div>
       <div className='container__nf-btn'>
         <Link to='/' className='btn'>Go Back</Link>

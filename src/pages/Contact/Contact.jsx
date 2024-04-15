@@ -90,7 +90,7 @@ export const Contact = () => {
           {status === 'FAILED' && <div className="alert error">There was an error sending your message.</div>}
         </form>
         <div className='img__contact'>
-          <img src={image} alt="side image" />
+          <img src={image} alt="side" />
         </div>
       </div>
       <Footer />

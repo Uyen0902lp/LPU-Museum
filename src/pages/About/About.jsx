@@ -19,7 +19,7 @@ const About = () => {
       <section className='section-mission'>
         <div className="section-mission-container">
           <div className="mission-image">
-              <img src={imgintro} alt="intro-img" />
+              <img src={imgintro} alt="intro" />
           </div>
           <div className="mission-content">
             <h2>Our Mission</h2>
@@ -38,7 +38,7 @@ const About = () => {
               <p>As a guardian of history and advocate for cultural understanding, the LPU Museum enriches public knowledge through its dynamic exhibits and educational initiatives. It remains a vibrant link to our heritage, inviting exploration of humanity's multifaceted legacy.</p>
           </div>
           <div className="history-image">
-              <img src={imgintro} alt="history-img" />
+              <img src={imgintro} alt="history" />
           </div>
         </div>
       </section>  
