@@ -3,13 +3,13 @@ This is my React app for my personal project. All the images are from Google.
 
 
 ## UI Design
-###Wireframe
+### Wireframe
   <details>
     <img alt="Wireframe" src="https://github.com/Uyen0902lp/LPU-Museum/blob/master/src/assets/images/little%20lemon%20wireframe.png" />
   </details>
 
 
-###Prototype
+### Prototype
   <details>
     <img alt="Prototype" src="https://github.com/Uyen0902lp/LPU-Museum/blob/master/src/assets/images/little%20lemon.png" />
   </details>
